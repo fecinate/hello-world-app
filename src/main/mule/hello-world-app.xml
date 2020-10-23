@@ -14,7 +14,9 @@ output application/json
 ---
 {
 	"Message": "Hello World",
-	"Your Local Time": now()
+	"Your Local Time": now(),
+	"Your date is :": now() as String {format: "y-MM-dd"},
+  	"Your time is ": now() as String {format: "hh:mm:ss"}
 }]' doc:name="Set Payload" doc:id="2d063965-2094-4b2f-9fc9-2684dedde735" />
 	</flow>
 </mule>
